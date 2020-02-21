@@ -1,1 +1,38 @@
 // Mixins Here
+
+.flexDisplay (@display, @wrap) {
+    display: @display;
+    flex-wrap: @wrap;
+}
+
+.thisColors (@color,@background) {
+    color:@color;
+    background-color: @background;
+}
+
+.signUpButton (@radius, @align ) {
+    background-color: @btn-bg-color;
+    color: @sea-shell;
+    border-radius: @radius;
+    padding: 3% 1%;
+    text-align: @align;
+    font-size: 1.6rem;
+    width: 30%;
+}
+
+.hoverButton (@bgc, @color) {
+    background-color: @bgc;
+    color: @color;
+}
+/*  why didn't this work?
+.hoverButton () {   
+    background-color: @seashell;
+    color: @btn-bg-color;
+} 
+
+entered into the less file as
+
+.hoverButton();
+
+*/
+
