@@ -2,6 +2,12 @@
 
 .home {
 
+  margin-top: 6.5%;
+
+  @media @mobile {
+  margin-top: 32%;
+  }
+
   img {
     width: 100%;
   }
@@ -89,9 +95,18 @@
 
       .btn {
         .signUpButton(15px, center);
+        transition:  all .2s;
+        position: relative;
 
         &:hover{ 
         .hoverButton(@sea-shell, @btn-bg-color);
+        transform: translateY( -3px);
+        box-shadow: 0 10px 20px rgba(0,0,0.2);
+        }
+
+        &:active{
+          transform: translateY(1px);
+          box-shadow: 0 5px 10px rgba(0,0,0.2);
         }
 
         @media @mobile {
@@ -121,3 +136,6 @@
     }
   }
 }// home
+
+//animations
+
